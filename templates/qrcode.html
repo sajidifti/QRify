@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generated</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generated</h1>
+        <img class="qr-code" src="data:image/png;base64,{{ qr_image_base64 }}" alt="QR Code">
+        <p class="qr-text">Text: {{ text }}</p>
+        <div class="qr-download-button">
+            <a href="data:image/png;base64,{{ qr_image_base64 }}" download="qrcode.png">
+                <button>Download QR Code</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

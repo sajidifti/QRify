@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Generate QR Code</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+        <form method="post" onsubmit="return validateForm()">
+            {% csrf_token %}
+            <label for="text">Enter text to generate QR code:</label>
+            <br>
+            <br>
+            <input type="text" name="text" id="text" placeholder="Enter text">
+            <div id="error-message" class="error-message">Please enter text</div>
+            <br>
+            <button type="submit">Generate QR Code</button>
+        </form>
+        <script>
+            function validateForm() {
+                console.log('Form validation triggered');
+                var textInput = document.getElementById('text');
+                var errorMessage = document.getElementById('error-message');
+
+                if (!textInput.value.trim()) {
+                    errorMessage.style.display = 'block';
+                    return false;
+                } else {
+                    errorMessage.style.display = 'none';
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>
