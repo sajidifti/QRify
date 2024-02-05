@@ -15,6 +15,6 @@ Visit. qrify.sajidifti.com
 
 ## UI Screenshots
 
-<img src="ui_ss/ss1.jpeg" alt="screenshot" width="80%" style="display: block; margin-left: auto; margin-right: auto;"/>
+<img src="ui_ss/ss1.jpeg" alt="screenshot" style="display: block; margin-left: auto; margin-right: auto;"/>
 
-<img src="ui_ss/ss2.jpeg" alt="screenshot" width="80%" style="display: block; margin-left: auto; margin-right: auto;"/>
+<img src="ui_ss/ss2.jpeg" alt="screenshot" style="display: block; margin-left: auto; margin-right: auto;"/>
