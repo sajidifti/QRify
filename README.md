@@ -1,4 +1,4 @@
-# ORify
+# QRify
 
 It is a simple QR code generator. Generate QR code from a text easily.
 
